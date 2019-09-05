@@ -1,2 +1,8 @@
-# automatic-checks-for-the-people-talk
-Automatic Checks for the People
+# Automatic Checks for the People
+
+# Run locally
+
+```
+yarn install
+yarn start
+```
