@@ -450,6 +450,73 @@
 
 			<!-- CI -->
 
+			<section data-background-image="media/jj-ying-7JX0-bfiuxQ-unsplash.jpg">
+				<h2 class="black">CI</h2>
+				<aside class="notes" data-markdown>
+					- The second line of defense is your CI.
+					- And all of you have it, right?
+					- All this what I'm explaining here can be used either with:
+					- Travis, Jenkins, Gitlab, CircleCI, GoCD...
+					- You name it.
+
+				</aside>
+			</section>
+
+			<section data-background-image="media/">
+				<img src="media/precommit_command.png" alt="" class="plain">
+				<aside class="notes" data-markdown>
+					- First job:
+					- Everything you run locally through pre-commit checks you should run again in the CI.
+					- Yes, everybody should use it because it is part of the project setup process,
+					- but give your devs benefit of a doubt why their code is different than set rules:
+					- maybe they just reinstalled their machine,
+					- maybe they just wanted to do a change through Github's web ui...
+					- Whatever the reason, you want an automatic system to catch that so that you don't lose time
+					nitpicking in the code review.
+				</aside>
+			</section>
+
+			<section data-background-image="media/brad-neathery-nPy0X4xew60-unsplash.jpg">
+				<aside class="notes" data-markdown>
+					- There are also certain things that, let's face it,
+					- just take too long to be done on each commit.
+					- 1...2...3...4...5
+					- Imagine waiting just mere 5 seconds to do a simple git commit.
+					- You couldn't wait for me to finish with the counting,
+					- imagine waiting that much 10 or 20 or 30 times a day.
+					- With a bunch of long checks done in pre-commit you are discuraging devs from commiting often
+					- and then you have a whole new problem on your hands.
+
+					- So you keep some checks exclusivly in the CI.
+				</aside>
+			</section>
+
+			<section data-background-image="media/">
+				<h3>Coverage decrease</h3>
+
+				<div>
+					<img src="media/coverage_report.png" alt="" class="plain">
+				</div>
+				<aside class="notes" data-markdown>
+					- This is an obvious one,
+					- but one that actually is determined after the test suite is run.
+					- So it's kind of in the "checks" domain,
+					- but is not happening with the other checks.
+				</aside>
+			</section>
+
+			<section data-background-image="media/">
+				<aside class="notes" data-markdown>
+					- notes go here
+				</aside>
+			</section>
+
+			<section data-background-image="media/">
+				<aside class="notes" data-markdown>
+					- notes go here
+				</aside>
+			</section>
+
 			<section data-background-image="media/">
 				<aside class="notes" data-markdown>
 					- notes go here
