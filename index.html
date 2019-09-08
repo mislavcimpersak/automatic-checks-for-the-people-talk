@@ -2,654 +2,716 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>Automatic Checks for the People</title>
+    <title>Automatic Checks for the People</title>
 
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
 
-	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="lib/css/monokai.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
 
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement('link');
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-		document.getElementsByTagName('head')[0].appendChild(link);
-	</script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 
-	<!-- Custom css styles -->
-	<style>
-		h1.black {
-			color: black;
-		}
+    <!-- Custom css styles -->
+    <style>
+        h1.black {
+            color: black;
+        }
 
-		h2.black {
-			color: black;
-		}
+        h2.black {
+            color: black;
+        }
 
-		h3.black {
-			color: black;
-		}
-	</style>
+        h3.black {
+            color: black;
+        }
+
+        section img.plain {
+            border: 0;
+            box-shadow: none;
+            background: none;
+        }
+    </style>
 </head>
 
 <body>
-	<div class="reveal">
-		<div class="slides">
-			<!-- ME -->
-			<section data-background-image="media/oscar-nord-MuJHwDHbXUk-unsplash.jpg">
-
-				<h1>Automatic Checks for the People</h1>
-
-				<ul>
-					<li>twitter: <a style="color: antiquewhite;"
-							href="https://twitter.com/MislavCimpersak">@MislavCimpersak</a></li>
-					<li>github: <a style="color: antiquewhite;"
-							href="https://github.com/mislavcimpersak">github.com/mislavcimpersak</a></li>
-				</ul>
-
-				<aside class="notes" data-markdown>
-					- notes go here
-				</aside>
-			</section>
-
-			<!-- INTRO -->
-
-			<section data-background-image="media/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg">
-				<aside class="notes" data-markdown>
-					- This talk was in the making in my head for the past two years.
-					- And of course, really in the making for the past three days.
-					- But it is a strugle I'm dealing with my whole development carreer.
-					- Ever since I started writing code I was always looking not just if my code is beautiful from
-					machine perspective but also beautiful from sort of a bird's eye view.
-					- Ok, maybe not my first Pascal programs, but definitly my first HTML pages written 16-17 years ago.
-					- And those were troubling times to "do development" especially in a small backwater village in
-					Zagorje.
-				</aside>
-			</section>
-
-			<section>
-				<img src="media/html_book_2.jpg" alt="" class="plain">
-				<aside class="notes" data-markdown>
-					- I mostly learned from one crappy book that I borrowed.
-					- It looked something like this. This is not the book, but it isn't too far off.
-					- It was confusing time.
-					- HTML 4 was out, but also XHTML 1.
-					- You should be using CSS for everything including for layout, and not tables anymore, but maybe
-					tables?
-					- I had no mentor, I only had the book and the internet.
-				</aside>
-			</section>
-
-			<section>
-				<img src="media/dialup.gif" alt="" class="plain">
-				<aside class="notes" data-markdown>
-					- yeah... dial up internet.
-					- I used to connect, open a bunch of pages, saved them one way or another,
-					- then disconnect and read through the materials.
-				</aside>
-			</section>
-
-			<section>
-				<img src="media/mi3dotorg.jpeg" alt="" class="plain">
-				<aside class="notes" data-markdown>
-					- Browsing forums like mi3 dot org was especially fun.
-				</aside>
-			</section>
-
-			<section data-background-image="media/sharon-mccutcheon--8a5eJ1-mmQ-unsplash.jpg">
-				<aside class="notes" data-markdown>
-					- And expensive.
-				</aside>
-			</section>
-
-			<section data-background-image="media/andre-hunter-5otlbgWJlLs-unsplash.jpg">
-				<aside class="notes" data-markdown>
-					- My parents were not happy.
-					- At one point, to mitigate the problem I just wasn't sleeping.
-					- The pages I downloaded, often I didn't just used them as a reading resource I also opened them in
-					at first
-				</aside>
-			</section>
-
-			<section>
-				<img src="media/dreamweaver.png" alt="" class="plain">
-				<aside class="notes" data-markdown>
-					- in Macromedia's Dreamweaver
-				</aside>
-			</section>
-
-			<section>
-				<img src="media/notepad4ever.gif" alt="" class="plain">
-				<aside class="notes" data-markdown>
-					- and later in my shinny Notepad++
-					- that I installed from
-				</aside>
-			</section>
-
-			<section>
-				<img src="media/bug_cd.jpg" alt="" class="plain">
-				<aside class="notes" data-markdown>
-					- bug cd.
-					- I was changing stuff around, opened the local page in my browser
-				</aside>
-			</section>
-
-			<section>
-				<img src="media/ie6.png" alt="" class="plain">
-				<aside class="notes" data-markdown>
-					- and pressed F5 endlessly.
-					- More often than not I was horiffied how badly structed things are,
-					- how difficult the code is for me to read.
-					- But one page was different than the others.
-				</aside>
-			</section>
-
-			<section>
-				<img src="media/css_zen_garden.png" alt="" class="plain">
-				<aside class="notes" data-markdown>
-					- CSS Zen Garden
-					- Side note:
-					- For those of you who never heard of it, CSS Zen Garden is a page started in 2003 which was used as
-					a demonstration what can be accomplished through CSS based design.
-					- The idea was that you take that page's HTML and without changing a single HTML element, create a
-					totally visually different web page using only CSS.
-					- It wasn't only the pages, the designs that were beautiful, it was all the code as well.
-					- So neat and clean.
-					- Spacings and indentations were meaningfull.
-					- CSS was grouped.
-					- I could read even the most complex example because the code had a certain flow that the authors
-					created.
-					- I started reading about code style guides and through out time made my own rules and I was always
-					busy adjusting them.
-					- And list of my rules grew.
-
-					- In my college days I did some ... you know ... college is the time to experiment right?
-					- Don't judge me.
-					- I did some ... PHP.
-				</aside>
-			</section>
-
-			<section>
-				<img src="media/php_logo.png" alt="" class="plain">
-				<aside class="notes" data-markdown>
-					- I was the guy in group projects that was changing others code because:
-					- whitespace is important!
-					- functions are camelcase!
-					- variables are snakecase!
-					- properties are camelcase!
-					- classes are also camelcase, but with the initial hump as well (Pascal case)
-					- Looking at it now, I'm not even sure those rules made sense.
-					- And also, apparently I was doing very anal code reviews before I even heard about code reviews.
-					:shrug:
-				</aside>
-			</section>
-
-			<section>
-				<img src="media/python_logo.png" alt="" class="plain">
-				<aside class="notes" data-markdown>
-					- Fast forward few years and I'm doing Python.
-					- Life is good.
-					- We have PEP8.
-					- So I'm using it.
-					- My other team members are not.
-					- And they are not wrong.
-					- It's sometimes horible to write and produces code that is even less readable.
-					- Then, we also have PyChecker, PyLint, PyFlakes...
-					- So many possible rules can be set and even when they are set in some guide book in some wiki or a
-					readme, they are hard to enforce.
-					- And let me tell you:
-					- If they are not enforced automatically, they are not happening.
-
-					- Enter the first line of defense:
-				</aside>
-			</section>
-
-			<!-- PRE-COMMIT -->
-
-			<section>
-				<h2>Pre-commit</h2>
-				<div>
-					<img src="media/precommit.png" alt="" class="plain">
-				</div>
-				<p>
-					<a href="https://pre-commit.com/">pre-commit.com</a>
-				</p>
-				<aside class="notes" data-markdown>
-					- It's "A framework for managing and maintaining multi-language pre-commit hooks."
-					- Hooks are small scripts that are run on every commit to automatically point out issues in code.
-					- Some can even modify the code if it's safe to do so.
-				</aside>
-			</section>
-
-			<section data-background-image="media/insights.dice.com_Programming-Language-Popularity.jpg">
-				<aside class="notes" data-markdown>
-					- What you are getting with it is an easy way to use industry standards for any language without
-					messing up and bloating your local env.
-				</aside>
-			</section>
-
-			<section data-background-image="media/pankaj-patel-6JVlSdgMacE-unsplash.jpg">
-				<aside class="notes" data-markdown>
-					- The example given on the project web site best describes it:
-					- You are working on a static page, but you want to lint you SCSS files with scss-lint which is
-					written in Ruby.
-					- Using pre-commit there is no need for a special gem file or for installing the linter manually.
-					- Pre-commit takes care of installing it initially and running the liner on each commit.
-				</aside>
-			</section>
-
-			<section>
-
-				<div>
-					<img src="media/precommit_config.png" alt="" class="plain">
-				</div>
-
-				<aside class="notes" data-markdown>
-					- Hooks are defined in a .yaml config file that can look like this:
-				</aside>
-			</section>
-
-			<section>
-
-				<div>
-					<img src="media/precommit_example.png" alt="" class="plain">
-				</div>
-
-				<aside class="notes" data-markdown>
-					- And on commit output looks like this.
-
-					- Since I was already talking about code style I'm going to start with that one.
-				</aside>
-			</section>
-
-			<section data-background-image="media/daniel-von-appen-t5MxUIeSp8o-unsplash.jpg">
-				<h3>Code formating</h3>
-				<aside class="notes" data-markdown>
-					- There's no question about the usefulness of readable code formatting.
-					- While it doesn't change the semantics of the code, it simplifies maintenance.
-					- We all know that code is read much more often than it is written,
-					- it makes sense to invest some effort when writing code to make it easier to read later.
-					- There are two major benefits to automated code formatting:
-				</aside>
-			</section>
-
-			<section data-background-image="media/alvaro-serrano-hjwKMkehBco-unsplash.jpg">
-				<aside class="notes" data-markdown>
-					- Individually, you no longer have to
-					- constantly make small decisions about code formatting,
-					- based on rules, on taste, or on a mix of both.
-					- Just throw the code in a file, run the formatter and you're done!
-
-					- Until you try it, you have no idea how much this unclutters you mind.
-				</aside>
-			</section>
-
-			<section data-background-image="media/david-iskander-8hFiT80X-6o-unsplash.jpg">
-				<aside class="notes" data-markdown>
-					- Team members no longer need to think about code formatting in code reviews.
-					- Whatever the formatter does is the expected result, by definition.
-					- This removes the thought of "I would have formatted this a bit differently" while reviewing code
-					- exactly like it removes "how do I format this?" while writing code.
-				</aside>
-			</section>
-
-			<section data-background-image="media/">
-				<h4>PEP 8</h4>
-
-				<p class="fragment fade-in" data-fragment-index="10">
-					aka.
-				</p>
-
-				<h4 class="fragment fade-in" data-fragment-index="10">pycodestyle</h4>
-
-				<p class="fragment fade-in" data-fragment-index="10">
-					<a href="https://github.com/PyCQA/pycodestyle">github.com/PyCQA/pycodestyle</a>
-				</p>
-
-				<aside class="notes" data-markdown>
-					- I touched upon PEP8 already.
-					- It is often presented as "the usual" path.
-					- We all know about it or at least we should.
-					- And... most of us have given up on it.
-					- Directly on indirectly.
-					- The problem is that it works till some degree.
-					- When things get complicated, PEP8 gets weird.
-					- Today, the tool that was called PEP8 is renamed to pycodestyle.
-					- So go crazy, added it as a pre-commit hook.
-				</aside>
-			</section>
-
-			<section data-background-image="media/">
-				<h4>YAPF</h4>
-
-				<p>
-					<a href="https://github.com/google/yapf">github.com/google/yapf</a>
-				</p>
-				<aside class="notes" data-markdown>
-					- I wasn't the only one who had problems with PEP8.
-					- Google had it too.
-					- YAPF stands for "Yet another Python formatter".
-					- Often considered "the sane alternative to PEP8".
-					- It's highly configurable which is a good thing, but also a bad thing.
-					- You can use YAPF and start writing custom rules and in the end end up with not so pretty code.
-					- If you keep your rules minimal, you should be safe.
-					- And if you are already using it on a project, just add YAPF as a pre-commit hook.
-				</aside>
-			</section>
-
-			<section data-background-image="media/">
-				<div>
-					<img src="media/black_logo.png" alt="" class="plain">
-				</div>
-
-				<div>
-					<a href="https://github.com/psf/black">github.com/psf/black</a>
-				</div>
-
-				<aside class="notes" data-markdown>
-					- Black is the newest contender in the market.
-					- Same idea as `gofmt` - intentionally not very configurable.
-					- Default: 88 characters per line and double quotes.
-					- Famous open source projects using it:
-					- pytest, tox, Hypothesis, Django, SQLAlchemy...
-					- PSF endorsed project as of few months ago.
-					- Also endorsed by me ;)
-					- And honestly - it's worry free.
-					- Does it produce the most beautiful code in the world?
-					- Debatable.
-					- Does it produce uniformed and consistently readable code?
-					- Yes.
-					- Does it leave enough wiggle room to have different formating accross team members?
-					- No :)
-				</aside>
-			</section>
-
-			<section data-background-image="media/">
-				<h3>Valid code</h3>
-
-				<ul class="fragment fade-in">
-					<li>Python AST</li>
-					<li>bash script AST</li>
-					<li>valid Ruby</li>
-					<li>buildable Go</li>
-					<li>...</li>
-				</ul>
-
-				<aside class="notes" data-markdown>
-					- Next we have quick and easy hooks that check if are writing valid code.
-				</aside>
-			</section>
-
-			<section data-background-image="media/">
-				<h3>Valid code</h3>
-
-				<ul>
-					<li>docstring existance</li>
-					<li>debug statements</li>
-					<li>merge conflict strings</li>
-					<li>trailing whitespace</li>
-					<li>end of file whitespace</li>
-					<li>...</li>
-				</ul>
-
-				<aside class="notes" data-markdown>
-
-				</aside>
-			</section>
-
-			<section data-background-image="media/">
-				<h3>Valid code</h3>
-
-				<ul>
-					<li>valid JSON</li>
-					<li>valid YAML</li>
-					<li>valid TOML</li>
-					<li>valid XML</li>
-					<li>...</li>
-				</ul>
-
-				<aside class="notes" data-markdown>
-
-				</aside>
-			</section>
-
-			<section>
-				<h3>Imports sorting</h3>
-
-				<div>
-					<img src="media/imports_sort_example.png" alt="" class="plain">
-				</div>
-
-				<aside class="notes" data-markdown>
-					- a fast one:
-					- Imports sorting.
-				</aside>
-			</section>
-
-			<section data-background-image="media/">
-				<h3>Dependencies sorting</h3>
-
-				<div>
-					<img src="media/dependencies_sort_example.png" alt="" class="plain">
-				</div>
-				<aside class="notes" data-markdown>
-					- Another fast one:
-					- dependencies sorting.
-					- Nice to be able to quickly find the 3rd party lib you set in your project.
-
-					- I believe there is also a hook for Pipfile which pipenv uses.
-				</aside>
-			</section>
-
-			<!-- CI -->
-
-			<section data-background-image="media/jj-ying-7JX0-bfiuxQ-unsplash.jpg">
-				<h2 class="black">CI</h2>
-				<aside class="notes" data-markdown>
-					- The second line of defense is your CI.
-					- And all of you have it, right?
-					- All this what I'm explaining here can be used either with:
-					- Travis, Jenkins, Gitlab, CircleCI, GoCD...
-					- You name it.
-
-				</aside>
-			</section>
-
-			<section data-background-image="media/">
-				<img src="media/precommit_command.png" alt="" class="plain">
-				<aside class="notes" data-markdown>
-					- First job:
-					- Everything you run locally through pre-commit checks you should run again in the CI.
-					- Yes, everybody should use it because it is part of the project setup process,
-					- but give your devs benefit of a doubt why their code is different than set rules:
-					- maybe they just reinstalled their machine,
-					- maybe they just wanted to do a change through Github's web ui...
-					- Whatever the reason, you want an automatic system to catch that so that you don't lose time
-					nitpicking in the code review.
-				</aside>
-			</section>
-
-			<section data-background-image="media/brad-neathery-nPy0X4xew60-unsplash.jpg">
-				<aside class="notes" data-markdown>
-					- There are also certain things that, let's face it,
-					- just take too long to be done on each commit.
-					- 1...2...3...4...5
-					- Imagine waiting just mere 5 seconds to do a simple git commit.
-					- You couldn't wait for me to finish with the counting,
-					- imagine waiting that much 10 or 20 or 30 times a day.
-					- With a bunch of long checks done in pre-commit you are discuraging devs from commiting often
-					- and then you have a whole new problem on your hands.
-
-					- So you keep some checks exclusivly in the CI.
-				</aside>
-			</section>
-
-			<section data-background-image="media/">
-				<h3>Coverage decrease</h3>
-
-				<div>
-					<img src="media/coverage_report.png" alt="" class="plain">
-				</div>
-				<aside class="notes" data-markdown>
-					- This is an obvious one,
-					- but one that actually is determined after the test suite is run.
-					- So it's kind of in the "checks" domain,
-					- but is not happening with the other checks.
-				</aside>
-			</section>
-
-			<section data-background-image="media/">
-				<aside class="notes" data-markdown>
-					- notes go here
-				</aside>
-			</section>
-
-			<section data-background-image="media/">
-				<aside class="notes" data-markdown>
-					- notes go here
-				</aside>
-			</section>
-
-			<section data-background-image="media/">
-				<aside class="notes" data-markdown>
-					- notes go here
-				</aside>
-			</section>
-
-			<section data-background-image="media/">
-				<aside class="notes" data-markdown>
-					- notes go here
-				</aside>
-			</section>
-
-			<!-- OUTRO -->
-
-			<section data-background-image="media/gift-habeshaw-vLz1Gy-FLkQ-unsplash.jpg">
-				<h2>Where to start?</h2>
-				<aside class="notes" data-markdown>
-					- "Well Mislav, this is all nice and fun when you are starting a project, what about when you are
-					working on 6 year old monstrosity that is trying to eat your children?"
-				</aside>
-			</section>
-
-			<section data-background-image="media/nathan-dumlao-N9I3T-AUp84-unsplash.jpg">
-				<h3 class="black">Formatting</h3>
-				<aside class="notes" data-markdown>
-					- For code formatting, be it linting or imports sorting or anything that is not really doing
-					anything with the logic of the code
-					- There are two options:
-				</aside>
-			</section>
-
-			<section data-background-image="media/denny-muller-jLjfAWwHdB8-unsplash.jpg">
-				<h3>Formatting</h3>
-
-				<h4>One commit</h4>
-
-				<aside class="notes" data-markdown>
-					- First: do it in one commit. Like pulling a bandage.
-					- This is the way some major open sources projects did it with Black.
-					- True, it messes up your git history in a way,
-					- because now all the code will be on the same last commit.
-					- You can still go down the history and see the real author, but now you've added an extra step.
-				</aside>
-			</section>
-
-			<section data-background-image="media/ben-duchac-3fJOXw1RbPo-unsplash.jpg">
-				<h3>Formatting</h3>
-
-				<h4>Boy scout rule</h4>
-
-				<aside class="notes" data-markdown>
-					- Second - the boy scout rule - everything you touch, you leave it behind nicer than you found it.
-					- You are working on let's say logic.py,
-					- you add one import, but the rest of them are in random order.
-					- Re-order them and commit it like that.
-				</aside>
-			</section>
-
-			<section>
-				<h3>Checks</h3>
-				<div class="fragment fade-in">
-					<img src="media/prospector_warning.png" alt="" class="plain">
-				</div>
-				<aside class="notes" data-markdown>
-					- For checks:
-					- add it as a stage in CI, just a stage that can fail.
-					- The psychological effect of people seeing this red mark might encourage them to fix it slowly, one
-					by one.
-					- Hopefully.
-					- Once it's established as a common practice make it a CI step that will break the build.
-				</aside>
-			</section>
-
-			<section>
-				<h3>Down the line</h3>
-
-				<div class="fragment fade-in">
-					<img src="media/check_prospector.png" alt="" class="plain">
-				</div>
-
-				<div class="fragment fade-in">
-					<img src="media/check_dockerfile.png" alt="" class="plain">
-				</div>
-
-				<aside class="notes" data-markdown>
-					- All the checks you use, they should not be set in stone.
-					- And you should be able to add more if the need arises.
-					- In most of the teams I was working in they were added gradually into the project, each after some
-					discussion.
-					- So the check and the rule it enforces is a group decision.
-					- Not an autocratic one.
-				</aside>
-			</section>
-
-			<section data-background-image="media/aron-visuals-BXOXnQ26B7o-unsplash.jpg">
-				<aside class="notes" data-markdown>
-					- See what works for you and your team
-					- and stop waisting time going in circles with always the same comments and easy fixes.
-				</aside>
-			</section>
-
-			<section data-background-image="media/oscar-nord-MuJHwDHbXUk-unsplash.jpg">
-				<h1>Automatic Checks for the People</h1>
-
-				<ul>
-					<li>twitter: <a style="color: antiquewhite;"
-							href="https://twitter.com/MislavCimpersak">@MislavCimpersak</a></li>
-					<li>github: <a style="color: antiquewhite;"
-							href="https://github.com/mislavcimpersak">github.com/mislavcimpersak</a></li>
-				</ul>
-			</section>
-
-		</div>
-	</div>
-
-	<script src="js/reveal.js"></script>
-
-	<script>
-		// More info about config & dependencies:
-		// - https://github.com/hakimel/reveal.js#configuration
-		// - https://github.com/hakimel/reveal.js#dependencies
-		Reveal.initialize({
-			history: true,
-			transition: 'fade',
-
-			dependencies: [
-				{ src: 'plugin/markdown/marked.js' },
-				{ src: 'plugin/markdown/markdown.js' },
-				{ src: 'plugin/notes/notes.js', async: true },
-				{ src: 'plugin/highlight/highlight.js', async: true }
-			]
-		});
-	</script>
+    <div class="reveal">
+        <div class="slides">
+            <!-- ME -->
+            <section data-background-image="media/oscar-nord-MuJHwDHbXUk-unsplash.jpg">
+
+                <h1>Automatic Checks for the People</h1>
+
+                <ul>
+                    <li>twitter: <a style="color: antiquewhite;"
+                            href="https://twitter.com/MislavCimpersak">@MislavCimpersak</a></li>
+                    <li>github: <a style="color: antiquewhite;"
+                            href="https://github.com/mislavcimpersak">github.com/mislavcimpersak</a></li>
+                </ul>
+
+                <aside class="notes" data-markdown>
+                    - notes go here
+                </aside>
+            </section>
+
+            <!-- INTRO -->
+
+            <section data-background-image="media/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg">
+                <aside class="notes" data-markdown>
+                    - This talk was in the making in my head for the past two years.
+                    - And of course, really in the making for the past three days.
+                    - But it is a strugle I'm dealing with my whole development carreer.
+                    - Ever since I started writing code I was always looking not just if my code is beautiful from
+                    machine perspective but also beautiful from sort of a bird's eye view.
+                    - Ok, maybe not my first Pascal programs, but definitly my first HTML pages written 16-17 years ago.
+                    - And those were troubling times to "do development" especially in a small backwater village in
+                    Zagorje.
+                </aside>
+            </section>
+
+            <section>
+                <img src="media/html_book_2.jpg" alt="" class="plain">
+                <aside class="notes" data-markdown>
+                    - I mostly learned from one crappy book that I borrowed.
+                    - It looked something like this. This is not the book, but it isn't too far off.
+                    - It was confusing time.
+                    - HTML 4 was out, but also XHTML 1.
+                    - You should be using CSS for everything including for layout, and not tables anymore, but maybe
+                    tables?
+                    - I had no mentor, I only had the book and the internet.
+                </aside>
+            </section>
+
+            <section>
+                <img src="media/dialup.gif" alt="" class="plain">
+                <aside class="notes" data-markdown>
+                    - yeah... dial up internet.
+                    - I used to connect, open a bunch of pages, saved them one way or another,
+                    - then disconnect and read through the materials.
+                </aside>
+            </section>
+
+            <section>
+                <img src="media/mi3dotorg.jpeg" alt="" class="plain">
+                <aside class="notes" data-markdown>
+                    - Browsing forums like mi3 dot org was especially fun.
+                </aside>
+            </section>
+
+            <section data-background-image="media/sharon-mccutcheon--8a5eJ1-mmQ-unsplash.jpg">
+                <aside class="notes" data-markdown>
+                    - And expensive.
+                </aside>
+            </section>
+
+            <section data-background-image="media/andre-hunter-5otlbgWJlLs-unsplash.jpg">
+                <aside class="notes" data-markdown>
+                    - My parents were not happy.
+                    - At one point, to mitigate the problem I just wasn't sleeping.
+                    - The pages I downloaded, often I didn't just used them as a reading resource I also opened them in
+                    at first
+                </aside>
+            </section>
+
+            <section>
+                <img src="media/dreamweaver.png" alt="" class="plain">
+                <aside class="notes" data-markdown>
+                    - in Macromedia's Dreamweaver
+                </aside>
+            </section>
+
+            <section>
+                <img src="media/notepad4ever.gif" alt="" class="plain">
+                <aside class="notes" data-markdown>
+                    - and later in my shinny Notepad++
+                    - that I installed from
+                </aside>
+            </section>
+
+            <section>
+                <img src="media/bug_cd.jpg" alt="" class="plain">
+                <aside class="notes" data-markdown>
+                    - bug cd.
+                    - I was changing stuff around, opened the local page in my browser
+                </aside>
+            </section>
+
+            <section>
+                <img src="media/ie6.png" alt="" class="plain">
+                <aside class="notes" data-markdown>
+                    - and pressed F5 endlessly.
+                    - More often than not I was horiffied how badly structed things are,
+                    - how difficult the code is for me to read.
+                    - But one page was different than the others.
+                </aside>
+            </section>
+
+            <section>
+                <img src="media/css_zen_garden.png" alt="" class="plain">
+                <aside class="notes" data-markdown>
+                    - CSS Zen Garden
+                    - Side note:
+                    - For those of you who never heard of it, CSS Zen Garden is a page started in 2003 which was used as
+                    a demonstration what can be accomplished through CSS based design.
+                    - The idea was that you take that page's HTML and without changing a single HTML element, create a
+                    totally visually different web page using only CSS.
+                    - It wasn't only the pages, the designs that were beautiful, it was all the code as well.
+                    - So neat and clean.
+                    - Spacings and indentations were meaningfull.
+                    - CSS was grouped.
+                    - I could read even the most complex example because the code had a certain flow that the authors
+                    created.
+                    - I started reading about code style guides and through out time made my own rules and I was always
+                    busy adjusting them.
+                    - And list of my rules grew.
+
+                    - In my college days I did some ... you know ... college is the time to experiment right?
+                    - Don't judge me.
+                    - I did some ... PHP.
+                </aside>
+            </section>
+
+            <section>
+                <img src="media/php_logo.png" alt="" class="plain">
+                <aside class="notes" data-markdown>
+                    - I was the guy in group projects that was changing others code because:
+                    - whitespace is important!
+                    - functions are camelcase!
+                    - variables are snakecase!
+                    - properties are camelcase!
+                    - classes are also camelcase, but with the initial hump as well (Pascal case)
+                    - Looking at it now, I'm not even sure those rules made sense.
+                    - And also, apparently I was doing very anal code reviews before I even heard about code reviews.
+                    :shrug:
+                </aside>
+            </section>
+
+            <section>
+                <img src="media/python_logo.png" alt="" class="plain">
+                <aside class="notes" data-markdown>
+                    - Fast forward few years and I'm doing Python.
+                    - Life is good.
+                    - We have PEP8.
+                    - So I'm using it.
+                    - My other team members are not.
+                    - And they are not wrong.
+                    - It's sometimes horible to write and produces code that is even less readable.
+                    - Then, we also have PyChecker, PyLint, PyFlakes...
+                    - So many possible rules can be set and even when they are set in some guide book in some wiki or a
+                    readme, they are hard to enforce.
+                    - And let me tell you:
+                    - If they are not enforced automatically, they are not happening.
+
+                    - Enter the first line of defense:
+                </aside>
+            </section>
+
+            <!-- PRE-COMMIT -->
+
+            <section>
+                <h2>Pre-commit</h2>
+                <div>
+                    <img src="media/precommit.png" alt="" class="plain">
+                </div>
+                <p>
+                    <a href="https://pre-commit.com/">pre-commit.com</a>
+                </p>
+                <aside class="notes" data-markdown>
+                    - It's "A framework for managing and maintaining multi-language pre-commit hooks."
+                    - Hooks are small scripts that are run on every commit to automatically point out issues in code.
+                    - Some can even modify the code if it's safe to do so.
+                </aside>
+            </section>
+
+            <section data-background-image="media/insights.dice.com_Programming-Language-Popularity.jpg">
+                <aside class="notes" data-markdown>
+                    - What you are getting with it is an easy way to use industry standards for any language without
+                    messing up and bloating your local env.
+                </aside>
+            </section>
+
+            <section data-background-image="media/pankaj-patel-6JVlSdgMacE-unsplash.jpg">
+                <aside class="notes" data-markdown>
+                    - The example given on the project web site best describes it:
+                    - You are working on a static page, but you want to lint you SCSS files with scss-lint which is
+                    written in Ruby.
+                    - Using pre-commit there is no need for a special gem file or for installing the linter manually.
+                    - Pre-commit takes care of installing it initially and running the liner on each commit.
+                </aside>
+            </section>
+
+            <section>
+
+                <div>
+                    <img src="media/precommit_config.png" alt="" class="plain">
+                </div>
+
+                <aside class="notes" data-markdown>
+                    - Hooks are defined in a .yaml config file that can look like this:
+                </aside>
+            </section>
+
+            <section>
+
+                <div>
+                    <img src="media/precommit_example.png" alt="" class="plain">
+                </div>
+
+                <aside class="notes" data-markdown>
+                    - And on commit output looks like this.
+
+                    - Since I was already talking about code style I'm going to start with that one.
+                </aside>
+            </section>
+
+            <section data-background-image="media/daniel-von-appen-t5MxUIeSp8o-unsplash.jpg">
+                <h3>Code formating</h3>
+                <aside class="notes" data-markdown>
+                    - There's no question about the usefulness of readable code formatting.
+                    - While it doesn't change the semantics of the code, it simplifies maintenance.
+                    - We all know that code is read much more often than it is written,
+                    - it makes sense to invest some effort when writing code to make it easier to read later.
+                    - There are two major benefits to automated code formatting:
+                </aside>
+            </section>
+
+            <section data-background-image="media/alvaro-serrano-hjwKMkehBco-unsplash.jpg">
+                <aside class="notes" data-markdown>
+                    - Individually, you no longer have to
+                    - constantly make small decisions about code formatting,
+                    - based on rules, on taste, or on a mix of both.
+                    - Just throw the code in a file, run the formatter and you're done!
+
+                    - Until you try it, you have no idea how much this unclutters you mind.
+                </aside>
+            </section>
+
+            <section data-background-image="media/david-iskander-8hFiT80X-6o-unsplash.jpg">
+                <aside class="notes" data-markdown>
+                    - Team members no longer need to think about code formatting in code reviews.
+                    - Whatever the formatter does is the expected result, by definition.
+                    - This removes the thought of "I would have formatted this a bit differently" while reviewing code
+                    - exactly like it removes "how do I format this?" while writing code.
+                </aside>
+            </section>
+
+            <section data-background-image="media/">
+                <h4>PEP 8</h4>
+
+                <p class="fragment fade-in" data-fragment-index="10">
+                    aka.
+                </p>
+
+                <h4 class="fragment fade-in" data-fragment-index="10">pycodestyle</h4>
+
+                <p class="fragment fade-in" data-fragment-index="10">
+                    <a href="https://github.com/PyCQA/pycodestyle">github.com/PyCQA/pycodestyle</a>
+                </p>
+
+                <aside class="notes" data-markdown>
+                    - I touched upon PEP8 already.
+                    - It is often presented as "the usual" path.
+                    - We all know about it or at least we should.
+                    - And... most of us have given up on it.
+                    - Directly on indirectly.
+                    - The problem is that it works till some degree.
+                    - When things get complicated, PEP8 gets weird.
+                    - Today, the tool that was called PEP8 is renamed to pycodestyle.
+                    - So go crazy, added it as a pre-commit hook.
+                </aside>
+            </section>
+
+            <section data-background-image="media/">
+                <h4>YAPF</h4>
+
+                <p>
+                    <a href="https://github.com/google/yapf">github.com/google/yapf</a>
+                </p>
+                <aside class="notes" data-markdown>
+                    - I wasn't the only one who had problems with PEP8.
+                    - Google had it too.
+                    - YAPF stands for "Yet another Python formatter".
+                    - Often considered "the sane alternative to PEP8".
+                    - It's highly configurable which is a good thing, but also a bad thing.
+                    - You can use YAPF and start writing custom rules and in the end end up with not so pretty code.
+                    - If you keep your rules minimal, you should be safe.
+                    - And if you are already using it on a project, just add YAPF as a pre-commit hook.
+                </aside>
+            </section>
+
+            <section data-background-image="media/">
+                <div>
+                    <img src="media/black_logo.png" alt="" class="plain">
+                </div>
+
+                <div>
+                    <a href="https://github.com/psf/black">github.com/psf/black</a>
+                </div>
+
+                <aside class="notes" data-markdown>
+                    - Black is the newest contender in the market.
+                    - Same idea as `gofmt` - intentionally not very configurable.
+                    - Default: 88 characters per line and double quotes.
+                    - Famous open source projects using it:
+                    - pytest, tox, Hypothesis, Django, SQLAlchemy...
+                    - PSF endorsed project as of few months ago.
+                    - Also endorsed by me ;)
+                    - And honestly - it's worry free.
+                    - Does it produce the most beautiful code in the world?
+                    - Debatable.
+                    - Does it produce uniformed and consistently readable code?
+                    - Yes.
+                    - Does it leave enough wiggle room to have different formating accross team members?
+                    - No :)
+                </aside>
+            </section>
+
+            <section data-background-image="media/">
+                <h3>Valid code</h3>
+
+                <ul class="fragment fade-in">
+                    <li>Python AST</li>
+                    <li>bash script AST</li>
+                    <li>valid Ruby</li>
+                    <li>buildable Go</li>
+                    <li>...</li>
+                </ul>
+
+                <aside class="notes" data-markdown>
+                    - Next we have quick and easy hooks that check if are writing valid code.
+                </aside>
+            </section>
+
+            <section data-background-image="media/">
+                <h3>Valid code</h3>
+
+                <ul>
+                    <li>docstring existance</li>
+                    <li>debug statements</li>
+                    <li>merge conflict strings</li>
+                    <li>trailing whitespace</li>
+                    <li>end of file whitespace</li>
+                    <li>...</li>
+                </ul>
+
+                <aside class="notes" data-markdown>
+
+                </aside>
+            </section>
+
+            <section data-background-image="media/">
+                <h3>Valid code</h3>
+
+                <ul>
+                    <li>valid JSON</li>
+                    <li>valid YAML</li>
+                    <li>valid TOML</li>
+                    <li>valid XML</li>
+                    <li>...</li>
+                </ul>
+
+                <aside class="notes" data-markdown>
+
+                </aside>
+            </section>
+
+            <section>
+                <h3>Imports sorting</h3>
+
+                <div>
+                    <img src="media/imports_sort_example.png" alt="" class="plain">
+                </div>
+
+                <aside class="notes" data-markdown>
+                    - a fast one:
+                    - Imports sorting.
+                </aside>
+            </section>
+
+            <section data-background-image="media/">
+                <h3>Dependencies sorting</h3>
+
+                <div>
+                    <img src="media/dependencies_sort_example.png" alt="" class="plain">
+                </div>
+                <aside class="notes" data-markdown>
+                    - Another fast one:
+                    - dependencies sorting.
+                    - Nice to be able to quickly find the 3rd party lib you set in your project.
+
+                    - I believe there is also a hook for Pipfile which pipenv uses.
+                </aside>
+            </section>
+
+            <!-- CI -->
+
+            <section data-background-image="media/jj-ying-7JX0-bfiuxQ-unsplash.jpg">
+                <h2 class="black">CI</h2>
+                <aside class="notes" data-markdown>
+                    - The second line of defense is your CI.
+                    - And all of you have it, right?
+                    - All this what I'm explaining here can be used either with:
+                    - Travis, Jenkins, Gitlab, CircleCI, GoCD...
+                    - You name it.
+
+                </aside>
+            </section>
+
+            <section data-background-image="media/">
+                <img src="media/precommit_command.png" alt="" class="plain">
+                <aside class="notes" data-markdown>
+                    - First job:
+                    - Everything you run locally through pre-commit checks you should run again in the CI.
+                    - Yes, everybody should use it because it is part of the project setup process,
+                    - but give your devs benefit of a doubt why their code is different than set rules:
+                    - maybe they just reinstalled their machine,
+                    - maybe they just wanted to do a change through Github's web ui...
+                    - Whatever the reason, you want an automatic system to catch that so that you don't lose time
+                    nitpicking in the code review.
+                </aside>
+            </section>
+
+            <section data-background-image="media/brad-neathery-nPy0X4xew60-unsplash.jpg">
+                <aside class="notes" data-markdown>
+                    - There are also certain things that, let's face it,
+                    - just take too long to be done on each commit.
+                    - 1...2...3...4...5
+                    - Imagine waiting just mere 5 seconds to do a simple git commit.
+                    - You couldn't wait for me to finish with the counting,
+                    - imagine waiting that much 10 or 20 or 30 times a day.
+                    - With a bunch of long checks done in pre-commit you are discuraging devs from commiting often
+                    - and then you have a whole new problem on your hands.
+
+                    - So you keep some checks exclusivly in the CI.
+                </aside>
+            </section>
+
+            <section data-background-image="media/">
+                <h3>Coverage decrease</h3>
+
+                <div>
+                    <img src="media/coverage_report.png" alt="" class="plain">
+                </div>
+                <aside class="notes" data-markdown>
+                    - This is an obvious one,
+                    - but one that actually is determined after the test suite is run.
+                    - So it's kind of in the "checks" domain,
+                    - but is not happening with the other checks.
+                </aside>
+            </section>
+
+            <section data-background-image="media/jon-flobrant-lRSChvh1Mhs-unsplash.jpg">
+                <h3 style="margin-top: 125px;">Prospector</h3>
+
+                <p style="padding-top: 180px;">
+                    <a href="https://github.com/PyCQA/prospector">github.com/PyCQA/prospector</a>
+                </p>
+                <p class="fragment fade-in">
+                    PyLint, PyFlakes, pydocstyle, McCabe, Dodgy...
+                </p>
+                <aside class="notes" data-markdown>
+                    - Excellent for detecting unused imports, cyclic imports, unreachable code (add more), loose debug statements...
+                    - Packs in PyLint, PyFlakes, PEP8 and also some other less known tools like McCabe (complexity checker) or Dodgy (sensitive string check).
+                    - Some of you think: But my IDE already does all of that.
+                    - Yes, yours does, but John, you see he uses emacs (that monster), so he's doesn't.
+                    - You don't want to impose tools on your team that will interupt their usual flow.
+                    - If someone is using emacs ever since Richard Stallman first wrote it
+                    - and gave it to the world or they are copying their vi config file that is older than some religions,
+                    - or they want to use a nightly build of Atom, let them.
+
+                    - One developer I'm working with for the past two months told me that at first she hated Prospector.
+                    - She is writing Python for the last 7 years.
+                    - She _knows_ how to write good code.
+                    - Yeah, I thought so too.
+                    - She continued her story and said that after about two weeks she started to feel that she is writing code that she herself belives is better and 99% of the times there are no Prospector warnings by default.
+                    - People adapt and when they learn new things and improve their work, they are usually happy.
+                </aside>
+            </section>
+
+            <section>
+                <H3 style="text-transform: none;">MyPy</H3>
+
+                <div>
+                    <img src="media/mypy.svg" alt="" class="plain">
+                </div>
+
+                <p>
+                    <a href="https://github.com/python/mypy">github.com/python/mypy</a>
+                </p>
+                <aside class="notes" data-markdown>
+                    - Static typing for Python is here to stay.
+                    - It's optional, but
+                    - If you are using it, you should make sure you are using it correctly.
+                </aside>
+            </section>
+
+            <section>
+                <h3>Docker linter</h3>
+
+                <div>
+                    <img src="media/hadolint.png" alt="" class="plain">
+                </div>
+
+                <p>
+                    <a href="https://github.com/hadolint/hadolint">github.com/hadolint/hadolint</a>
+                </p>
+                <aside class="notes" data-markdown>
+                    - I like to check also some "devopsy" stuff as well.
+                    - Hadolint helps you build best practice Docker images.
+                    - It parses the Dockerfile into an AST and performs rules on top of the AST.
+                    - If you are not writing Dockerfiles daily and are not the Yoda of Dockerfiles,
+                    - please, add this check.
+                    - Your ops team members will hate you just a tiny bit less.
+                </aside>
+            </section>
+
+            <section data-background-image="media/">
+                <h3>Terraform</h3>
+
+                <div>
+                    <img src="media/terraform_check.png" alt="" class="plain">
+                </div>
+                <aside class="notes" data-markdown>
+                    - I check the usual:
+                    - format
+                    - and if everything is valid.
+                    - Nothing much.
+                    - format I also run as a pre-commit,
+                    - but validate is slow, so I only run it in the CI as a check.
+                </aside>
+            </section>
+
+            <!-- OUTRO -->
+
+            <section data-background-image="media/gift-habeshaw-vLz1Gy-FLkQ-unsplash.jpg">
+                <h2>Where to start?</h2>
+                <aside class="notes" data-markdown>
+                    - "Well Mislav, this is all nice and fun when you are starting a project, what about when you are
+                    working on 6 year old monstrosity that is trying to eat your children?"
+                </aside>
+            </section>
+
+            <section data-background-image="media/nathan-dumlao-N9I3T-AUp84-unsplash.jpg">
+                <h3 class="black">Formatting</h3>
+                <aside class="notes" data-markdown>
+                    - For code formatting, be it linting or imports sorting or anything that is not really doing
+                    anything with the logic of the code
+                    - There are two options:
+                </aside>
+            </section>
+
+            <section data-background-image="media/denny-muller-jLjfAWwHdB8-unsplash.jpg">
+                <h3>Formatting</h3>
+
+                <h4>One commit</h4>
+
+                <aside class="notes" data-markdown>
+                    - First: do it in one commit. Like pulling a bandage.
+                    - This is the way some major open sources projects did it with Black.
+                    - True, it messes up your git history in a way,
+                    - because now all the code will be on the same last commit.
+                    - You can still go down the history and see the real author, but now you've added an extra step.
+                </aside>
+            </section>
+
+            <section data-background-image="media/ben-duchac-3fJOXw1RbPo-unsplash.jpg">
+                <h3>Formatting</h3>
+
+                <h4>Boy scout rule</h4>
+
+                <aside class="notes" data-markdown>
+                    - Second - the boy scout rule - everything you touch, you leave it behind nicer than you found it.
+                    - You are working on let's say logic.py,
+                    - you add one import, but the rest of them are in random order.
+                    - Re-order them and commit it like that.
+                </aside>
+            </section>
+
+            <section>
+                <h3>Checks</h3>
+                <div class="fragment fade-in">
+                    <img src="media/prospector_warning.png" alt="" class="plain">
+                </div>
+                <aside class="notes" data-markdown>
+                    - For checks:
+                    - add it as a stage in CI, just a stage that can fail.
+                    - The psychological effect of people seeing this red mark might encourage them to fix it slowly, one
+                    by one.
+                    - Hopefully.
+                    - Once it's established as a common practice make it a CI step that will break the build.
+                </aside>
+            </section>
+
+            <section>
+                <h3>Down the line</h3>
+
+                <div class="fragment fade-in">
+                    <img src="media/check_prospector.png" alt="" class="plain">
+                </div>
+
+                <div class="fragment fade-in">
+                    <img src="media/check_dockerfile.png" alt="" class="plain">
+                </div>
+
+                <aside class="notes" data-markdown>
+                    - All the checks you use, they should not be set in stone.
+                    - And you should be able to add more if the need arises.
+                    - In most of the teams I was working in they were added gradually into the project, each after some
+                    discussion.
+                    - So the check and the rule it enforces is a group decision.
+                    - Not an autocratic one.
+                </aside>
+            </section>
+
+            <section data-background-image="media/aron-visuals-BXOXnQ26B7o-unsplash.jpg">
+                <aside class="notes" data-markdown>
+                    - See what works for you and your team
+                    - and stop waisting time going in circles with always the same comments and easy fixes.
+                </aside>
+            </section>
+
+            <section data-background-image="media/oscar-nord-MuJHwDHbXUk-unsplash.jpg">
+                <h2>Q & A</h2>
+
+                <p>
+                    <a href="https://mislavcimpersak.github.io/automatic-checks-for-the-people-talk/">
+                        mislavcimpersak.github.io/automatic-checks-for-the-people-talk
+                    </a>
+                </p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            history: true,
+            transition: 'fade',
+
+            dependencies: [
+                { src: 'plugin/markdown/marked.js' },
+                { src: 'plugin/markdown/markdown.js' },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true }
+            ]
+        });
+    </script>
 </body>
 
 </html>
