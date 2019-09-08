@@ -28,9 +28,11 @@
 		h1.black {
 			color: black;
 		}
+
 		h2.black {
 			color: black;
 		}
+
 		h3.black {
 			color: black;
 		}
@@ -209,15 +211,77 @@
 				</aside>
 			</section>
 
+			<!-- PRE-COMMIT -->
+
 			<section>
 				<h2>Pre-commit</h2>
 				<div>
 					<img src="media/precommit.png" alt="" class="plain">
 				</div>
+				<p>
+					<a href="https://pre-commit.com/">pre-commit.com</a>
+				</p>
+				<aside class="notes" data-markdown>
+					- It's "A framework for managing and maintaining multi-language pre-commit hooks."
+					- Hooks are small scripts that are run on every commit to automatically point out issues in code.
+					- Some can even modify the code if it's safe to do so.
+				</aside>
+			</section>
+
+			<section data-background-image="media/insights.dice.com_Programming-Language-Popularity.jpg">
+				<aside class="notes" data-markdown>
+					- What you are getting with it is an easy way to use industry standards for any language without
+					messing up and bloating your local env.
+				</aside>
+			</section>
+
+			<section data-background-image="media/pankaj-patel-6JVlSdgMacE-unsplash.jpg">
+				<aside class="notes" data-markdown>
+					- The example given on the project web site best describes it:
+					- You are working on a static page, but you want to lint you SCSS files with scss-lint which is
+					written in Ruby.
+					- Using pre-commit there is no need for a special gem file or for installing the linter manually.
+					- Pre-commit takes care of installing it initially and running the liner on each commit.
+				</aside>
+			</section>
+
+			<section>
+
+				<div>
+					<img src="media/precommit_config.png" alt="" class="plain">
+				</div>
+
+				<aside class="notes" data-markdown>
+					- Hooks are defined in a .yaml config file that can look like this:
+				</aside>
+			</section>
+
+			<section>
+
+				<div>
+					<img src="media/precommit_example.png" alt="" class="plain">
+				</div>
+
+				<aside class="notes" data-markdown>
+					- And on commit output looks like this.
+
+					- Since I was already talking about code style I'm going to start with that one.
+				</aside>
+			</section>
+
+			<section data-background-image="media/">
 				<aside class="notes" data-markdown>
 					- notes go here
 				</aside>
 			</section>
+
+			<section data-background-image="media/">
+				<aside class="notes" data-markdown>
+					- notes go here
+				</aside>
+			</section>
+
+			<!-- CI -->
 
 			<section data-background-image="media/">
 				<aside class="notes" data-markdown>
@@ -241,8 +305,8 @@
 				</aside>
 			</section>
 
-			<section data-background-image="media/">
-				<h3>Formatting</h3>
+			<section data-background-image="media/nathan-dumlao-N9I3T-AUp84-unsplash.jpg">
+				<h3 class="black">Formatting</h3>
 				<aside class="notes" data-markdown>
 					- For code formatting, be it linting or imports sorting or anything that is not really doing
 					anything with the logic of the code
@@ -315,8 +379,8 @@
 
 			<section data-background-image="media/aron-visuals-BXOXnQ26B7o-unsplash.jpg">
 				<aside class="notes" data-markdown>
-						- See what works for you and your team
-						- and stop waisting time going in circles with always the same comments and easy fixes.
+					- See what works for you and your team
+					- and stop waisting time going in circles with always the same comments and easy fixes.
 				</aside>
 			</section>
 
