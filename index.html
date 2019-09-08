@@ -204,6 +204,18 @@
 					readme, they are hard to enforce.
 					- And let me tell you:
 					- If they are not enforced automatically, they are not happening.
+
+					- Enter the first line of defense:
+				</aside>
+			</section>
+
+			<section>
+				<h2>Pre-commit</h2>
+				<div>
+					<img src="media/precommit.png" alt="" class="plain">
+				</div>
+				<aside class="notes" data-markdown>
+					- notes go here
 				</aside>
 			</section>
 
@@ -211,6 +223,112 @@
 				<aside class="notes" data-markdown>
 					- notes go here
 				</aside>
+			</section>
+
+			<section data-background-image="media/">
+				<aside class="notes" data-markdown>
+					- notes go here
+				</aside>
+			</section>
+
+			<!-- OUTRO -->
+
+			<section data-background-image="media/gift-habeshaw-vLz1Gy-FLkQ-unsplash.jpg">
+				<h2>Where to start?</h2>
+				<aside class="notes" data-markdown>
+					- "Well Mislav, this is all nice and fun when you are starting a project, what about when you are
+					working on 6 year old monstrosity that is trying to eat your children?"
+				</aside>
+			</section>
+
+			<section data-background-image="media/">
+				<h3>Formatting</h3>
+				<aside class="notes" data-markdown>
+					- For code formatting, be it linting or imports sorting or anything that is not really doing
+					anything with the logic of the code
+					- There are two options:
+				</aside>
+			</section>
+
+			<section data-background-image="media/denny-muller-jLjfAWwHdB8-unsplash.jpg">
+				<h3>Formatting</h3>
+
+				<h4>One commit</h4>
+
+				<aside class="notes" data-markdown>
+					- First: do it in one commit. Like pulling a bandage.
+					- This is the way some major open sources projects did it with Black.
+					- True, it messes up your git history in a way,
+					- because now all the code will be on the same last commit.
+					- You can still go down the history and see the real author, but now you've added an extra step.
+				</aside>
+			</section>
+
+			<section data-background-image="media/ben-duchac-3fJOXw1RbPo-unsplash.jpg">
+				<h3>Formatting</h3>
+
+				<h4>Boy scout rule</h4>
+
+				<aside class="notes" data-markdown>
+					- Second - the boy scout rule - everything you touch, you leave it behind nicer than you found it.
+					- You are working on let's say logic.py,
+					- you add one import, but the rest of them are in random order.
+					- Re-order them and commit it like that.
+				</aside>
+			</section>
+
+			<section>
+				<h3>Checks</h3>
+				<div class="fragment fade-in">
+					<img src="media/prospector_warning.png" alt="" class="plain">
+				</div>
+				<aside class="notes" data-markdown>
+					- For checks:
+					- add it as a stage in CI, just a stage that can fail.
+					- The psychological effect of people seeing this red mark might encourage them to fix it slowly, one
+					by one.
+					- Hopefully.
+					- Once it's established as a common practice make it a CI step that will break the build.
+				</aside>
+			</section>
+
+			<section>
+				<h3>Down the line</h3>
+
+				<div class="fragment fade-in">
+					<img src="media/check_prospector.png" alt="" class="plain">
+				</div>
+
+				<div class="fragment fade-in">
+					<img src="media/check_dockerfile.png" alt="" class="plain">
+				</div>
+
+				<aside class="notes" data-markdown>
+					- All the checks you use, they should not be set in stone.
+					- And you should be able to add more if the need arises.
+					- In most of the teams I was working in they were added gradually into the project, each after some
+					discussion.
+					- So the check and the rule it enforces is a group decision.
+					- Not an autocratic one.
+				</aside>
+			</section>
+
+			<section data-background-image="media/aron-visuals-BXOXnQ26B7o-unsplash.jpg">
+				<aside class="notes" data-markdown>
+						- See what works for you and your team
+						- and stop waisting time going in circles with always the same comments and easy fixes.
+				</aside>
+			</section>
+
+			<section data-background-image="media/oscar-nord-MuJHwDHbXUk-unsplash.jpg">
+				<h1>Automatic Checks for the People</h1>
+
+				<ul>
+					<li>twitter: <a style="color: antiquewhite;"
+							href="https://twitter.com/MislavCimpersak">@MislavCimpersak</a></li>
+					<li>github: <a style="color: antiquewhite;"
+							href="https://github.com/mislavcimpersak">github.com/mislavcimpersak</a></li>
+				</ul>
 			</section>
 
 		</div>
