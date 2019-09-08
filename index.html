@@ -269,9 +269,154 @@
 				</aside>
 			</section>
 
-			<section data-background-image="media/">
+			<section data-background-image="media/daniel-von-appen-t5MxUIeSp8o-unsplash.jpg">
+				<h3>Code formating</h3>
 				<aside class="notes" data-markdown>
-					- notes go here
+					- There's no question about the usefulness of readable code formatting.
+					- While it doesn't change the semantics of the code, it simplifies maintenance.
+					- We all know that code is read much more often than it is written,
+					- it makes sense to invest some effort when writing code to make it easier to read later.
+					- There are two major benefits to automated code formatting:
+				</aside>
+			</section>
+
+			<section data-background-image="media/alvaro-serrano-hjwKMkehBco-unsplash.jpg">
+				<aside class="notes" data-markdown>
+					- Individually, you no longer have to
+					- constantly make small decisions about code formatting,
+					- based on rules, on taste, or on a mix of both.
+					- Just throw the code in a file, run the formatter and you're done!
+
+					- Until you try it, you have no idea how much this unclutters you mind.
+				</aside>
+			</section>
+
+			<section data-background-image="media/david-iskander-8hFiT80X-6o-unsplash.jpg">
+				<aside class="notes" data-markdown>
+					- Team members no longer need to think about code formatting in code reviews.
+					- Whatever the formatter does is the expected result, by definition.
+					- This removes the thought of "I would have formatted this a bit differently" while reviewing code
+					- exactly like it removes "how do I format this?" while writing code.
+				</aside>
+			</section>
+
+			<section data-background-image="media/">
+				<h4>PEP 8</h4>
+
+				<p class="fragment fade-in" data-fragment-index="10">
+					aka.
+				</p>
+
+				<h4 class="fragment fade-in" data-fragment-index="10">pycodestyle</h4>
+
+				<p class="fragment fade-in" data-fragment-index="10">
+					<a href="https://github.com/PyCQA/pycodestyle">github.com/PyCQA/pycodestyle</a>
+				</p>
+
+				<aside class="notes" data-markdown>
+					- I touched upon PEP8 already.
+					- It is often presented as "the usual" path.
+					- We all know about it or at least we should.
+					- And... most of us have given up on it.
+					- Directly on indirectly.
+					- The problem is that it works till some degree.
+					- When things get complicated, PEP8 gets weird.
+					- Today, the tool that was called PEP8 is renamed to pycodestyle.
+					- So go crazy, added it as a pre-commit hook.
+				</aside>
+			</section>
+
+			<section data-background-image="media/">
+				<h4>YAPF</h4>
+
+				<p>
+					<a href="https://github.com/google/yapf">github.com/google/yapf</a>
+				</p>
+				<aside class="notes" data-markdown>
+					- I wasn't the only one who had problems with PEP8.
+					- Google had it too.
+					- YAPF stands for "Yet another Python formatter".
+					- Often considered "the sane alternative to PEP8".
+					- It's highly configurable which is a good thing, but also a bad thing.
+					- You can use YAPF and start writing custom rules and in the end end up with not so pretty code.
+					- If you keep your rules minimal, you should be safe.
+					- And if you are already using it on a project, just add YAPF as a pre-commit hook.
+				</aside>
+			</section>
+
+			<section data-background-image="media/">
+				<div>
+					<img src="media/black_logo.png" alt="" class="plain">
+				</div>
+
+				<div>
+					<a href="https://github.com/psf/black">github.com/psf/black</a>
+				</div>
+
+				<aside class="notes" data-markdown>
+					- Black is the newest contender in the market.
+					- Same idea as `gofmt` - intentionally not very configurable.
+					- Default: 88 characters per line and double quotes.
+					- Famous open source projects using it:
+					- pytest, tox, Hypothesis, Django, SQLAlchemy...
+					- PSF endorsed project as of few months ago.
+					- Also endorsed by me ;)
+					- And honestly - it's worry free.
+					- Does it produce the most beautiful code in the world?
+					- Debatable.
+					- Does it produce uniformed and consistently readable code?
+					- Yes.
+					- Does it leave enough wiggle room to have different formating accross team members?
+					- No :)
+				</aside>
+			</section>
+
+			<section data-background-image="media/">
+				<h3>Valid code</h3>
+
+				<ul class="fragment fade-in">
+					<li>Python AST</li>
+					<li>bash script AST</li>
+					<li>valid Ruby</li>
+					<li>buildable Go</li>
+					<li>...</li>
+				</ul>
+
+				<aside class="notes" data-markdown>
+					- Next we have quick and easy hooks that check if are writing valid code.
+				</aside>
+			</section>
+
+			<section data-background-image="media/">
+				<h3>Valid code</h3>
+
+				<ul>
+					<li>docstring existance</li>
+					<li>debug statements</li>
+					<li>merge conflict strings</li>
+					<li>trailing whitespace</li>
+					<li>end of file whitespace</li>
+					<li>...</li>
+				</ul>
+
+				<aside class="notes" data-markdown>
+
+				</aside>
+			</section>
+
+			<section data-background-image="media/">
+				<h3>Valid code</h3>
+
+				<ul>
+					<li>valid JSON</li>
+					<li>valid YAML</li>
+					<li>valid TOML</li>
+					<li>valid XML</li>
+					<li>...</li>
+				</ul>
+
+				<aside class="notes" data-markdown>
+
 				</aside>
 			</section>
 
