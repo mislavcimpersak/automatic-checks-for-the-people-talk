@@ -61,7 +61,7 @@
                 </ul>
 
                 <aside class="notes" data-markdown>
-                    - notes go here
+                    -
                 </aside>
             </section>
 
@@ -215,7 +215,6 @@
                     readme, they are hard to enforce.
                     - And let me tell you:
                     - If they are not enforced automatically, they are not happening.
-
                     - Enter the first line of defense:
                 </aside>
             </section>
@@ -279,7 +278,7 @@
             </section>
 
             <section data-background-image="media/daniel-von-appen-t5MxUIeSp8o-unsplash.jpg">
-                <h3>Code formating</h3>
+                <h3>Code formatting</h3>
                 <aside class="notes" data-markdown>
                     - There's no question about the usefulness of readable code formatting.
                     - While it doesn't change the semantics of the code, it simplifies maintenance.
@@ -309,7 +308,7 @@
                 </aside>
             </section>
 
-            <section data-background-image="media/">
+            <section>
                 <h4>PEP 8</h4>
 
                 <p class="fragment fade-in" data-fragment-index="10">
@@ -335,7 +334,7 @@
                 </aside>
             </section>
 
-            <section data-background-image="media/">
+            <section>
                 <h4>YAPF</h4>
 
                 <p>
@@ -353,7 +352,7 @@
                 </aside>
             </section>
 
-            <section data-background-image="media/">
+            <section>
                 <div>
                     <img src="media/black_logo.png" alt="" class="plain">
                 </div>
@@ -380,7 +379,7 @@
                 </aside>
             </section>
 
-            <section data-background-image="media/">
+            <section>
                 <h3>Valid code</h3>
 
                 <ul class="fragment fade-in">
@@ -393,10 +392,12 @@
 
                 <aside class="notes" data-markdown>
                     - Next we have quick and easy hooks that check if are writing valid code.
+
+                    - valid Python - we check the abstract syntax tree
                 </aside>
             </section>
 
-            <section data-background-image="media/">
+            <section>
                 <h3>Valid code</h3>
 
                 <ul>
@@ -439,6 +440,10 @@
                 <aside class="notes" data-markdown>
                     - a fast one:
                     - Imports sorting.
+                        - system imports
+                        - 3rd party packages
+                        - project imports
+                        - relative imports
                 </aside>
             </section>
 
@@ -479,7 +484,8 @@
                     - Yes, everybody should use it because it is part of the project setup process,
                     - but give your devs benefit of a doubt why their code is different than set rules:
                     - maybe they just reinstalled their machine,
-                    - maybe they just wanted to do a change through Github's web ui...
+                    - maybe they just wanted to do a change through Github's web ui,
+                    - maybe they are on some ancient version of the check tool.
                     - Whatever the reason, you want an automatic system to catch that so that you don't lose time
                     nitpicking in the code review.
                 </aside>
@@ -490,12 +496,11 @@
                     - There are also certain things that, let's face it,
                     - just take too long to be done on each commit.
                     - 1...2...3...4...5
-                    - Imagine waiting just mere 5 seconds to do a simple git commit.
                     - You couldn't wait for me to finish with the counting,
-                    - imagine waiting that much 10 or 20 or 30 times a day.
+                    - Imagine waiting just mere 5 seconds to do a simple git commit.
+                    - Imagine waiting that much 10 or 20 or 30 times a day.
                     - With a bunch of long checks done in pre-commit you are discuraging devs from commiting often
                     - and then you have a whole new problem on your hands.
-
                     - So you keep some checks exclusivly in the CI.
                 </aside>
             </section>
@@ -511,6 +516,11 @@
                     - but one that actually is determined after the test suite is run.
                     - So it's kind of in the "checks" domain,
                     - but is not happening with the other checks.
+                    - There are many reasons coverage decrease can happen.
+                    - Be it new untested code,
+                    - removing a seemingly obsolete test,
+                    - or something silly like naming your test method same as an existing one.
+                    - Things like that happen all the time.
                 </aside>
             </section>
 
@@ -598,7 +608,7 @@
             <!-- OUTRO -->
 
             <section data-background-image="media/gift-habeshaw-vLz1Gy-FLkQ-unsplash.jpg">
-                <h2>Where to start?</h2>
+                <h2 style="margin-top: 280px;">Where to start?</h2>
                 <aside class="notes" data-markdown>
                     - "Well Mislav, this is all nice and fun when you are starting a project, what about when you are
                     working on 6 year old monstrosity that is trying to eat your children?"
@@ -648,7 +658,7 @@
                 </div>
                 <aside class="notes" data-markdown>
                     - For checks:
-                    - add it as a stage in CI, just a stage that can fail.
+                    - add it as a job in CI, just a job that can fail.
                     - The psychological effect of people seeing this red mark might encourage them to fix it slowly, one
                     by one.
                     - Hopefully.
@@ -680,7 +690,7 @@
             <section data-background-image="media/aron-visuals-BXOXnQ26B7o-unsplash.jpg">
                 <aside class="notes" data-markdown>
                     - See what works for you and your team
-                    - and stop waisting time going in circles with always the same comments and easy fixes.
+                    - and stop waisting time going in circles with always the same comments in the reviews and change requests that could be automated.
                 </aside>
             </section>
 
