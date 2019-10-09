@@ -70,11 +70,17 @@
             <section data-background-image="media/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg">
                 <aside class="notes" data-markdown>
                     - This talk was in the making in my head for the past two years.
-                    - And of course, really in the making for the past three days.
                     - But it is a strugle I'm dealing with my whole development carreer.
                     - Ever since I started writing code I was always looking not just if my code is beautiful from
                     machine perspective but also beautiful from sort of a bird's eye view.
-                    - Ok, maybe not my first Pascal programs, but definitly my first HTML pages written 16-17 years ago.
+                </aside>
+            </section>
+
+            <section>
+                <img src="media/pascal.png" alt="" class="plain">
+                <aside class="notes" data-markdown>
+                    - Ok, maybe not my first Pascal programs,
+                    - but definitly my first HTML pages written 16-17 years ago.
                     - And those were troubling times to "do development" especially in a small backwater village in
                     Zagorje.
                 </aside>
@@ -142,8 +148,8 @@
             <section>
                 <img src="media/bug_cd.jpg" alt="" class="plain">
                 <aside class="notes" data-markdown>
-                    - bug cd.
-                    - I was changing stuff around, opened the local page in my browser
+                    - pc magazine's free cd.
+                    - I was changing stuff around, opening the local page in my browser
                 </aside>
             </section>
 
@@ -169,21 +175,20 @@
             </section>
 
             <section>
-                    <img src="media/css_zen_garden_code.png" alt="" class="plain">
-                    <aside class="notes" data-markdown>
-                        - So neat and clean.
-                        - Spacings and indentations were meaningfull.
-                        - CSS was grouped.
-                        - I could read even the most complex example because the code had a certain flow that the authors
-                        created.
-                        - I started reading about code style guides and through out time made my own rules and I was always
-                        busy adjusting them.
-                        - And list of my rules grew.
-                        - In my college days I did some ... you know ... college is the time to experiment right?
-                        - Don't judge me.
-                        - I did some ... PHP.
-                    </aside>
-                </section>
+                <img src="media/css_zen_garden_code.png" alt="" class="plain">
+                <aside class="notes" data-markdown>
+                    - So neat and clean.
+                    - Spacings and indentations were meaningfull.
+                    - CSS was grouped.
+                    - I could read even the most complex example because the code had a certain flow that the authors
+                    created.
+                    - I started reading about code style guides and through out time made my own rules and I was always
+                    busy adjusting them.
+                    - And list of my rules grew.
+                    - In my college days I did some ... you know ... college is the time to experiment right?
+                    - I did some ... PHP.
+                </aside>
+            </section>
 
             <section>
                 <img src="media/php_logo.png" alt="" class="plain">
@@ -414,7 +419,7 @@
                 </aside>
             </section>
 
-            <section data-background-image="media/">
+            <section>
                 <h3>Valid code</h3>
 
                 <ul>
@@ -440,14 +445,14 @@
                 <aside class="notes" data-markdown>
                     - a fast one:
                     - Imports sorting.
-                        - system imports
-                        - 3rd party packages
-                        - project imports
-                        - relative imports
+                    - system imports
+                    - 3rd party packages
+                    - project imports
+                    - relative imports
                 </aside>
             </section>
 
-            <section data-background-image="media/">
+            <section>
                 <h3>Dependencies sorting</h3>
 
                 <div>
@@ -476,7 +481,7 @@
                 </aside>
             </section>
 
-            <section data-background-image="media/">
+            <section>
                 <img src="media/precommit_command.png" alt="" class="plain">
                 <aside class="notes" data-markdown>
                     - First job:
@@ -495,17 +500,16 @@
                 <aside class="notes" data-markdown>
                     - There are also certain things that, let's face it,
                     - just take too long to be done on each commit.
-                    - 1...2...3...4...5
-                    - You couldn't wait for me to finish with the counting,
-                    - Imagine waiting just mere 5 seconds to do a simple git commit.
-                    - Imagine waiting that much 10 or 20 or 30 times a day.
+                    - Imagine waiting just 5 or 10 seconds to do a simple git commit.
+                    - Sure, it doesn't sound much now.
+                    - But imagine waiting that much 10 or 20 or 30 times a day.
                     - With a bunch of long checks done in pre-commit you are discuraging devs from commiting often
                     - and then you have a whole new problem on your hands.
                     - So you keep some checks exclusivly in the CI.
                 </aside>
             </section>
 
-            <section data-background-image="media/">
+            <section>
                 <h3>Coverage decrease</h3>
 
                 <div>
@@ -534,18 +538,23 @@
                     PyLint, PyFlakes, pydocstyle, McCabe, Dodgy...
                 </p>
                 <aside class="notes" data-markdown>
-                    - Excellent for detecting unused imports, cyclic imports, unreachable code (add more), loose debug statements...
-                    - Packs in PyLint, PyFlakes, PEP8 and also some other less known tools like McCabe (complexity checker) or Dodgy (sensitive string check).
+                    - Excellent for detecting unused imports, cyclic imports, unreachable code (add more), loose debug
+                    statements...
+                    - Packs in PyLint, PyFlakes, PEP8 and also some other less known tools like McCabe (complexity
+                    checker) or Dodgy (sensitive string check).
                     - Some of you think: But my IDE already does all of that.
                     - Yes, yours does, but not all your team members use the same tools.
                     - Maybe someone is using emacs or a nightly build of Atom.
                     - Whatever works for them.
                     - --------
-                    - One developer I'm working with for the past two months told me just last week that at first she hated Prospector.
+                    - One developer I'm working with for the past two months told me just last week that at first she
+                    hated Prospector.
                     - She is writing Python for the last 7 years.
                     - She _knows_ how to write good code.
                     - Yeah, I thought so too.
-                    - She continued her story and said that after about two weeks she started to feel that she is writing code that she herself belives is better and 99% of the times there are no Prospector warnings by default.
+                    - She continued her story and said that after about two weeks she started to feel that she is
+                    writing code that she herself belives is better and 99% of the times there are no Prospector
+                    warnings by default.
                     - People adapt and when they learn new things and improve their work, they are usually happy.
                 </aside>
             </section>
@@ -587,7 +596,7 @@
                 </aside>
             </section>
 
-            <section data-background-image="media/">
+            <section>
                 <h3>Terraform</h3>
 
                 <div>
@@ -688,7 +697,8 @@
             <section data-background-image="media/aron-visuals-BXOXnQ26B7o-unsplash.jpg">
                 <aside class="notes" data-markdown>
                     - See what works for you and your team
-                    - and stop waisting time going in circles with always the same comments in the reviews and change requests that could be automated.
+                    - and stop wasting time going in circles with always the same comments in the reviews and change
+                    requests that could and should be automated.
                 </aside>
             </section>
 
@@ -701,7 +711,8 @@
                 </p>
 
                 <p style="padding-top: 80px;">
-                    <a href="https://mislavcimpersak.github.io/automatic-checks-for-the-people-talk/" style="color:antiquewhite;">
+                    <a href="https://mislavcimpersak.github.io/automatic-checks-for-the-people-talk/"
+                        style="color:antiquewhite;">
                         mislavcimpersak.github.io/automatic-checks-for-the-people-talk
                     </a>
                 </p>
