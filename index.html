@@ -222,8 +222,8 @@
                     - So I'm using it.
                     - My other team members are not.
                     - And they are not wrong.
-                    - It's sometimes horible to write and produces code that is even less readable.
-                    - Then, we also have PyChecker, PyLint, PyFlakes...
+                    - Sometimes it produces code that is even less readable.
+                    - Then, all of a sudden we also have PyChecker, PyLint, PyFlakes...
                     - So many possible rules can be set and even when they are set in some guide book in some wiki or a
                     readme, they are hard to enforce.
                     - And let me tell you:
@@ -251,11 +251,10 @@
 
             <section data-background-image="media/pankaj-patel-6JVlSdgMacE-unsplash.jpg">
                 <aside class="notes" data-markdown>
-                    - The example given on the project web site best describes it:
-                    - You are working on a static page, but you want to lint you SCSS files with scss-lint which is
-                    written in Ruby.
+                    - Let's say that you are working on a static page,
+                    - but you want to lint you SCSS files with scss-lint which is written in Ruby.
                     - Using pre-commit there is no need for a special gem file or for installing the linter manually.
-                    - Pre-commit takes care of installing it initially and running the liner on each commit.
+                    - Pre-commit takes care of installing it and running the liner on each commit.
                 </aside>
             </section>
 
@@ -288,8 +287,6 @@
                 <aside class="notes" data-markdown>
                     - There's no question about the usefulness of readable code formatting.
                     - While it doesn't change the semantics of the code, it simplifies maintenance.
-                    - We all know that code is read much more often than it is written,
-                    - it makes sense to invest some effort when writing code to make it easier to read later.
                     - There are two major benefits to automated code formatting:
                 </aside>
             </section>
@@ -328,8 +325,7 @@
                 <aside class="notes" data-markdown>
                     - I touched upon PEP8 already.
                     - It is often presented as "the usual" path.
-                    - And... most of us have given up on it.
-                    - When things get complicated, PEP8 gets weird.
+                    - And... most of us int he Python world have given up on it.
                     - Today, the tool that was called PEP8 is renamed to pycodestyle.
                     - So go crazy, added it as a pre-commit hook.
                 </aside>
@@ -347,7 +343,6 @@
                     - YAPF stands for "Yet another Python formatter".
                     - Often considered "the sane alternative to PEP8".
                     - It's highly configurable which is a good thing, but also a bad thing.
-                    - You can use YAPF and start writing custom rules and in the end end up with not so pretty code.
                     - If you keep your rules minimal, you should be safe.
                     - And if you are already using it on a project, just add YAPF as a pre-commit hook.
                 </aside>
@@ -364,19 +359,12 @@
 
                 <aside class="notes" data-markdown>
                     - Black is the newest contender in the market.
-                    - Same idea as `gofmt` - intentionally not very configurable.
-                    - Default: 88 characters per line and double quotes.
+                    - Same idea as `gofmt` - intentionally not very configurable with sane defaults.
                     - Famous open source projects using it:
                     - pytest, tox, Hypothesis, Django, SQLAlchemy...
                     - PSF endorsed project as of few months ago.
                     - Also endorsed by me ;)
-                    - And honestly - it's worry free.
-                    - Does it produce the most beautiful code in the world?
-                    - Debatable.
-                    - Does it produce uniformed and consistently readable code?
-                    - Yes.
-                    - Does it leave enough wiggle room to have different formating accross team members?
-                    - No :)
+                    - because it's worry free.
                 </aside>
             </section>
 
